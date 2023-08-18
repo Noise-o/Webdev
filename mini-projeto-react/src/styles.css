@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    height: 100vh ;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column ;
+    
+}
+
+@keyframes flipFlex{
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(90deg);
+    }
+}

@@ -1,7 +1,6 @@
 
 *.mini-projeto-react
 *.projeto-react
-
 ### react ###
 .DS_*
 *.log

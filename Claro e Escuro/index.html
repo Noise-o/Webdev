@@ -3,36 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
-    <title>Tema escuro</title>
+
+    <title>Tela #1</title>
 </head>
 <body>
+    <!-- Bloco de mudança de tema -->
     <div class="top">
         
         <input type="checkbox" class="checkbox" id="chk">
         <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
             <div class="ball"></div>
         </label>
 
     </div>
 
-    <div class="main_block">
-       
-        <div class="left_block">
+
+    <!-- Bloco principal, caixa de login -->
+    <div id="container">
+    
+    
+        <!-- Bloco esquerdo do login -->
+        <div id="left_block" id="chk">
             <h1>Faça Login</h1>
+            
         </div>
-        <div class="right_block">
-            <form action="required" method="post">
-                <label for="">Login</label>
-                <input type="text" placeholder="Usuário">
-                <label for="">Senha</label>
-                <input type="text" placeholder="Senha">
-                <input type="checkbox">
-                <label for="">Lembrar-me</label>
-                <input type="submit" value="Entrar">
-            </form>
+        
+
+        <!-- Bloco Direito do Login -->
+        <div id="right_block">
+            <div id="social_media">
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div id="inputs">
+                <form action="required" method="post">
+
+                <div class="input-box">
+                    <label for="user">
+                        Usuário
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Usuário">
+                        </div>
+                    </label>
+                </div>    
+                  
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" placeholder="Senha">
+                        </div>
+                    </label>
+
+                </div>
+            
+                
+                <div class="input-box">
+                    <label for="remember">
+                        Lembrar-me
+                        <input type="checkbox">
+                        <div>
+                    </label>
+                    <div class="send_button">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </div>
+
+               </form>
+             </div>
+                
+            
+
+            </div>
+
 
         </div>
     </div>

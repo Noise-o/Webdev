@@ -29,23 +29,27 @@
 
 
 body {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 
 }
 
 body.dark {
-  background: #292c35;
+  background: var(--color-dark-100);
 }
 
 .top{
+  width: 90%;
   display: flex ;
   align-items: end;
   justify-content: end;
-  height: 3vh;
-  margin: 25px;
+  margin: 15px;
+
  
 }
 
@@ -55,7 +59,7 @@ body.dark {
 }
 
 .label {
-  background-color: #111;
+  background-color: var(--color-dark-100);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -100,10 +104,15 @@ body.dark {
 #container {
   height: 400px;
   width: 750px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-color: var(--color-light-50);
+
+  border-radius: 1%;
+
   transition: background 0.2s linear;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
   animation: dark-to-light-background 0.3s ease-in-out;
@@ -124,12 +133,15 @@ body.dark {
 #left_block {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column-reverse;
+
 }
 
 #left_block h1 {
   font-size: 40px;
-  position: relative;
+  position: static;
+
 }
 
 #left_block h1::before {
@@ -150,14 +162,13 @@ body.dark {
 /* Social Media */
 #social_media {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 15px;
+  
 }
 
 #social_media i {
-  width: 1vw ;
-
-  
-  
+  size: 20px;  
 }
 
 #social_media i:hover {
@@ -205,21 +216,22 @@ body.dark {
   outline: none;
 }
 
-/* Forgot password
-#forgot_passw a {
+/* Forgot password */
+#forgot_password a {
   text-decoration: none;
-  color: var(--color-dark-50);
+  color: var(--color-dark-100);
   font-size: 12px;
 }
 
-#forgot_passw a:hover {
-  color: var(--color-purple-50);
-} */
+#forgot_password a:hover {
+  color: var(--color-dark-900);
+  transform: scale(1.04);
+} 
 
 /* Login Button */
 #login_button {
   border: none;
-  background: var(--color-gradient);
+  background: var(--color-dark-100);
   padding: 7px;
   border-radius: 3px;
   color: var(--color-light-50);
@@ -232,10 +244,22 @@ body.dark {
   transform: scale(1.05);
 }
 
+/* Lembrar */
+
+#remember {
+  text-decoration: none;
+  color: var(--color-dark-50);
+  font-size: 16px;
+}
+
+#remember input:hover {
+  color: var(--color-dark-900);
+}
+
+
 #mid_line{
-  background-color: var(--color);
-  margin: 10%;
+  background-color: var(--color-dark-100);
   padding: 1px;
   height: 80% ;
-
+  margin: 7%;
 }

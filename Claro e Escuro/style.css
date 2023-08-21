@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
-  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,8 +28,8 @@
 
 
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height:100vh ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,11 +43,10 @@ body.dark {
 }
 
 .top{
-  width: 90%;
-  display: flex ;
-  align-items: end;
-  justify-content: end;
-  margin: 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
 
  
 }
@@ -216,6 +214,9 @@ body.dark {
   outline: none;
 }
 
+.input-field:hover{
+  transform: scale(1.05);
+}
 /* Forgot password */
 #forgot_password a {
   text-decoration: none;
@@ -225,7 +226,8 @@ body.dark {
 
 #forgot_password a:hover {
   color: var(--color-dark-900);
-  transform: scale(1.04);
+  text-decoration: underline;
+  
 } 
 
 /* Login Button */
@@ -242,18 +244,16 @@ body.dark {
 
 #login_button:hover {
   transform: scale(1.05);
+  text-decoration: underline;
 }
 
 /* Lembrar */
 
-#remember {
-  text-decoration: none;
+#remember  {
+  
   color: var(--color-dark-50);
   font-size: 16px;
-}
-
-#remember input:hover {
-  color: var(--color-dark-900);
+  cursor: pointer;
 }
 
 

@@ -31,7 +31,7 @@
     
         <!-- Bloco esquerdo do login -->
         <div id="left_block" id="chk">
-            <h1>Login</h1>
+            <h1>Entrar</h1>
             <div id="social_media">
                 <a href="">
                     <i class="fa-brands fa-facebook"></i>
@@ -78,14 +78,17 @@
                 </div>
             
                 
-                <div id="remember">
+                <div class="input-box">
+                    <label id="remember" for="checkbox" onclick="toggleCheckbox()">
                         Lembrar-me
-                        <input type="checkbox">
+                        <input type="checkbox" id="checkbox" >
                     
+                    </label>
+
                 </div>   
                     
                     <button type="submit" id="login_button">
-                    Login
+                    Entrar
                     </button>
                </form>
             

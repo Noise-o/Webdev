@@ -34,13 +34,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
-
 }
 
-body.dark {
-  background: var(--color-dark-100);
-}
 
 .top{
   position: fixed;
@@ -163,10 +158,7 @@ body.dark {
   justify-content: center;
   gap: 15px;
   
-}
-
-#social_media i {
-  size: 20px;  
+  
 }
 
 #social_media i:hover {
@@ -262,4 +254,50 @@ body.dark {
   padding: 1px;
   height: 80% ;
   margin: 7%;
+}
+
+/* DARK */
+
+.dark{
+  background: var(--color-light-50);
+}
+
+.dark#container,.dark#login_form{
+  color: var(--color-light-50);
+  background: var(--color-dark-100);
+
+}
+
+.dark#login_button  {
+  color: var(--color-dark-100);
+  background: var(--color-light-50);
+}
+
+.dark#mid_line{
+  background: var(--color-light-50);
+}
+
+.dark .input-field i{
+  color: var(--color-light-50)
+}
+
+.dark #login_button{
+  color: var(--color-dark-900);
+  background: var(--color-light-50);
+}
+
+.dark #social_media i{
+  background: var(--color-light-50);
+}
+
+.dark #mid_line{
+  background: var(--color-light-50);
+}
+
+.dark #forgot_password a, .dark #remember{
+  color: var(--color-light-50);
+}
+
+.dark .input-field input {
+  color: var(--color-light-50);
 }

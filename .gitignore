@@ -1,7 +1,5 @@
 .gitignore
-.HTML-CSS-Javascript/
-.mini-projeto-react/
-.projeto-react/
+.env
 
 ### react ###
 .DS_*
